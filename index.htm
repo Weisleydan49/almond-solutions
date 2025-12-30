@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almond Solutions - Professional IT Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 2rem 80px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        .cta-button {
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .section {
+            padding: 80px 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #667eea;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .about {
+            background: #f8f9fa;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .contact-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        .contact-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><img src="COMPANY LOGO.png" alt="Almond Solutions Logo" style="height: 40px; margin-right: 10px; vertical-align: middle;"> ALMOND SOLUTIONS</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Almond Solutions</h1>
+        <p>Your Trusted Partner for Professional IT Services</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><img src="CATALOG 1- OS.png" alt="OS Installation" style="height: 60px; width: auto;"></div>
+                <h3>OS Installation</h3>
+                <p>Professional installation of Windows, Kali Linux, Ubuntu, Fedora, and Linux Mint. Dual boot configurations available.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><img src="ms office suite.png" alt="Office Installation" style="height: 60px; width: auto;"></div>
+                <h3>Office Installation</h3>
+                <p>Complete Microsoft Office suite installation and setup for all your productivity needs.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><img src="kra.png" alt="KRA Services" style="height: 60px; width: auto;"></div>
+                <h3>KRA Services</h3>
+                <p>KRA PIN generation and assistance with filing tax returns. Fast and reliable service.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><img src="Black Maximalist Sunday Music Party Instagram….jpg" alt="Event Posters" style="height: 60px; width: auto;"></div>
+                <h3>Event Posters</h3>
+                <p>Professional graphic design for event posters, flyers, and promotional materials.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><img src="eCitizen.png" alt="eCitizen Services" style="height: 60px; width: auto;"></div>
+                <h3>eCitizen Services</h3>
+                <p>Complete assistance with eCitizen portal services including ID applications, passport processing, and various government-related digital services.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><img src="kuccps.png" alt="KUCCPS Application" style="height: 60px; width: auto;"></div>
+                <h3>KUCCPS Application</h3>
+                <p>Expert guidance through the KUCCPS application process for university admissions, ensuring smooth and successful applications to your chosen institutions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><img src="web development.jpg" alt="Web Development" style="height: 60px; width: auto;"></div>
+                <h3>Web Development</h3>
+                <p>Custom website design and development to establish your online presence.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><img src="social media.jpg" alt="Social Media" style="height: 60px; width: auto;"></div>
+                <h3>Social Media</h3>
+                <p>WhatsApp catalogs, Instagram, and Facebook page setup and management.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><img src="Technical support icon in robotic hand….jpg" alt="Tech Support" style="height: 60px; width: auto;"></div>
+                <h3>Tech Support</h3>
+                <p>Comprehensive technical support and troubleshooting for all your IT needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+            <p>Almond Solutions is your one-stop destination for professional IT services. We specialize in providing reliable, efficient, and affordable technology solutions to individuals and businesses. With expertise spanning operating systems, graphic design, government services, and digital presence, we're committed to making technology accessible and hassle-free for everyone.</p>
+            <p style="margin-top: 1.5rem;">Our team of experienced professionals is dedicated to delivering quality service with a personal touch. Whether you need technical installation, creative design, or assistance with official processes, we're here to help you succeed.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>📱 WhatsApp</h3>
+                <p>Message us for quick assistance</p>
+                <p>+254759471119</p>
+            </div>
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p>info.almondsolutions
+                    @gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <h3>📍 Location</h3>
+                <p>Nairobi, Kenya</p>
+            </div>
+            <div class="contact-item">
+                <h3>🌐 Social Media</h3>
+                <p>Instagram • Facebook</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Almond Solutions. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Professional IT Services • Nairobi, Kenya</p>
+    </footer>
+</body>
+</html>
